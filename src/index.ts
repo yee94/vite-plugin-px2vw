@@ -12,10 +12,7 @@ export function mobilePx2vw(options: Options) {
             plugins: [
               px2vw({
                 viewportWidth: 750,
-                exclude: [
-                  new RegExp(`^((?!${cwd}/src).)*$`), // inlucde src
-                  new RegExp(`^((?!${cwd}/node_modules).)*$`), // inlucde node_modules
-                ] as any,
+                exclude: new RegExp(`^((?!${cwd}/src).)*$`), // inlucde src
                 ...options,
               }),
             ],

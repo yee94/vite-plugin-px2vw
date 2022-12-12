@@ -14,7 +14,7 @@
     "dev": "father dev",
     "build": "father build",
     "prepublishOnly": "npm run build",
-    "release": "bumpp package.json && pnpm publish",
+    "release": "bumpp package.json && pnpm publish --no-git-checks",
     "test": "vitest --globals run"
   },
   "repository": {
