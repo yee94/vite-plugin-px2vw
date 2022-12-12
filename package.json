@@ -1,0 +1,42 @@
+{
+  "name": "vite-plugin-px2vw",
+  "version": "1.0.0",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/cjs/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "father dev",
+    "build": "father build",
+    "prepublishOnly": "npm run build",
+    "release": "bumpp package.json && pnpm publish",
+    "test": "vitest --globals run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yee94/vite-plugin-px2vw.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "yee.wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yee94/vite-plugin-px2vw/issues"
+  },
+  "homepage": "https://github.com/yee94/vite-plugin-px2vw#readme",
+  "devDependencies": {
+    "bumpp": "^8.2.1",
+    "father": "^4.0.0-rc.9",
+    "vite": "^3.2.4",
+    "vitest": "^0.22.1"
+  },
+  "dependencies": {
+    "@yuo/postcss-px2vw": "^1.0.5"
+  }
+}
