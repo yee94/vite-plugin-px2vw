@@ -1,13 +1,17 @@
 {
   "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
     "jsx": "react",
-    "moduleResolution": "node",
+    "strict": true,
     "declaration": true,
     "skipLibCheck": true,
     "baseUrl": "./",
-    "types": ["vitest/globals"],
     "removeComments": false,
     "esModuleInterop": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true
   }
 }
