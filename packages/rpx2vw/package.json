@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-rpx2vw",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
@@ -30,7 +30,6 @@
     "vitest": "^0.34.6"
   },
   "dependencies": {
-    "@yuo/postcss-px2vw": "^1.0.5",
     "postcss-plugin-rpx2vw": "^1.0.0",
     "vite": "^5.0.4"
   }

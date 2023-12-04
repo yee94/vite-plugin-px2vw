@@ -63,9 +63,6 @@ importers:
 
   packages/rpx2vw:
     dependencies:
-      '@yuo/postcss-px2vw':
-        specifier: ^1.0.5
-        version: 1.0.5
       postcss-plugin-rpx2vw:
         specifier: ^1.0.0
         version: 1.0.0(postcss@8.4.32)
